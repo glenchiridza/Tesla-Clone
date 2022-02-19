@@ -30,6 +30,22 @@ function Home(){
             leftButtonText="Custom Order"
             rightButtonText="Existing Inventory"/>
 
+        <Section title="Solar Panels"
+            backgroundImage = "solar-panel.jpg" 
+            description="Lowest Cost Solar Panels in America "
+            leftButtonText="Order Now"
+            rightButtonText="Learn More"/>
+
+        <Section title="Solar Roof"
+            backgroundImage = "solar-roof.jpg" 
+            description="Produce Clean Energy From Your Roof "
+            leftButtonText="Order Now"
+            rightButtonText="Learn More"/>
+        
+        <Section title="Accessories"
+            backgroundImage = "accessories.jpg" 
+            leftButtonText="Shop Now"/>
+
         </Container>
     );
 }

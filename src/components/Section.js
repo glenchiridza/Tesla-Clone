@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 function Section({title,backgroundImage,description,leftButtonText,rightButtonText}) {
   return (
-    <Wrap bg-img={backgroundImage}>
+    <Wrap bg_img={backgroundImage}>
         <ContentText>
             <h1>{title}</h1>
             <p>{description}</p>
@@ -13,10 +13,16 @@ function Section({title,backgroundImage,description,leftButtonText,rightButtonTe
                 <LeftButton>
                     {leftButtonText}
                 </LeftButton>
+                {
 
+                rightButtonText
+                 && 
                 <RightButton>
-                    {rightButtonText}
+                {rightButtonText}
                 </RightButton>
+
+                }
+                
 
             </ButtonGroup>
 
@@ -34,7 +40,7 @@ export default Section;
 const Wrap = styled.div`
     width:100vw;
     height:100vh;
-    background-image:${props => `url("/images/${props.bg-img}")`}
+    background-image:${props => `url("/images/${props.bg_img}")`};
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -61,7 +67,7 @@ const LeftButton = styled.div`
     font-size:13px;
     text-transform:uppercase;
     opacity:0.85;
-    background:rgba(23,26,33,0.8);
+    background:rgba(0,0,0,0.9);
     height:40px;
     width:250px;
     color:#fff;
