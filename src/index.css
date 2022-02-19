@@ -6,6 +6,9 @@
   margin:0;
 }
 
+a{
+  text-decoration:none;
+}
 
 body{
   width:100%;
@@ -23,3 +26,4 @@ body{
     transform: translateY(3px);
   }
 }
+
