@@ -5,10 +5,30 @@ import Section from './Section';
 function Home(){
     return (
         <Container>
-            <Section />
-            <Section />
-            <Section />
-            <Section />
+            <Section title="Model 3"
+            backgroundImage = "model-3.jpg" 
+            description="Order Online for Touchless Delivery"
+            leftButtonText="Custom Order"
+            rightButtonText="Existing Inventory"/>
+
+        <Section title="Model Y"
+            backgroundImage = "model-y.jpg" 
+            description="Order Online for Touchless Delivery"
+            leftButtonText="Custom Order"
+            rightButtonText="Existing Inventory"/>
+        
+        <Section title="Model S"
+            backgroundImage = "model-s.jpg" 
+            description="Order Online for Touchless Delivery"
+            leftButtonText="Custom Order"
+            rightButtonText="Existing Inventory"/>
+
+
+        <Section title="Model X"
+            backgroundImage = "model-x.jpg" 
+            description="Order Online for Touchless Delivery"
+            leftButtonText="Custom Order"
+            rightButtonText="Existing Inventory"/>
 
         </Container>
     );

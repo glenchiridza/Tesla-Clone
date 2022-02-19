@@ -1,21 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
-function Section() {
+function Section({title,description,leftButtonText,rightButtonText}) {
   return (
     <Wrap>
         <ContentText>
-            <h1>Model S</h1>
-            <p>Order Online for Touchless Delivery</p>
+            <h1>{title}</h1>
+            <p>{description}</p>
         </ContentText>
 
         <ActionButtons>
             <ButtonGroup>
                 <LeftButton>
-                    Custom Order
+                    {leftButtonText}
                 </LeftButton>
 
                 <RightButton>
-                    Existing Inventory
+                    {rightButtonText}
                 </RightButton>
 
             </ButtonGroup>
