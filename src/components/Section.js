@@ -52,6 +52,9 @@ const ContentText = styled.div`
 const ButtonGroup = styled.div`
     display:flex;
     margin-bottom:20px;
+    @media (max-width:772px){
+        flex-direction:column;
+    }
 `
 
 const LeftButton = styled.div`
@@ -72,7 +75,9 @@ const LeftButton = styled.div`
 `
 //inheriting css of the left button
 const RightButton = styled(LeftButton)`
-
+    background:#ffffff;
+    opacity:0.55;
+    color:#111;
 `
 
 const DownArrow = styled.img`
