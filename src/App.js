@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import ShopHeader from './components/ShopHeader';
 import Home from './components/Home';
 
 import {Routes,Route} from 'react-router-dom';
@@ -20,6 +21,7 @@ function App() {
   
         </Routes>  ,
    
+        <ShopHeader />
        
       </div>
     );

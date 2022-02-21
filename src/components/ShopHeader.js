@@ -31,4 +31,4 @@ function ShopHeader(){
     );
 }
 
-export default Header;
+export default ShopHeader;
