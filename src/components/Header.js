@@ -18,7 +18,7 @@ function Header(){
 
         <Container>
             <Link to='/' >
-                <img src='images/logo.svg' alt=''/>
+                <img src='images/logo.svg' alt='tesla logo' height="20px"/>
             </Link>
             <Menu>
 

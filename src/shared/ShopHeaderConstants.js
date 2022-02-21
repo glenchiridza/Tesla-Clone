@@ -4,7 +4,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from '@material-ui/icons/Close';
 
 export const Container = styled.div`
-    min-height:65px;
+    min-height:55px;
     position:fixed;
     display:flex;
     align-items:center;
@@ -13,11 +13,39 @@ export const Container = styled.div`
     top:0;
     left:0;
     right:0;
-    z-index;1;
+    transition: .5s;
+    *{
+        color:#fff;
+        font-family: 'Times New Roman', sans-serif;
+    }
+
+    #logo{
+        height:20px;
+        margin-top:7%;
+    }
+    
+    #shop-left{
+        
+        font-weight:600;
+        display:flex;
+        width:15vw;
+        justify-content:space-between;
+        text-align:center;
+        align-items:center;
+    };
+
+    &:hover *{
+        color:#000;
+    };
+    &:hover{
+        background:#ffffff;
+    }
+
    
 `
 
 export const Menu = styled.div`
+
     display:flex;
     align-items:center;
     justify-content:center;

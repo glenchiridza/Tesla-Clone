@@ -7,15 +7,25 @@ function ShopHeader(){
     return (
 
         <Container>
-            <Link to='/' >
-                <img src='images/logo.svg' alt=''/>
-            </Link>
+
+            <p id='shop-left'>
+                <a href='/' >
+                    <img src='images/logo.svg' alt='' id='logo'/>
+                </a>
+                |
+
+                <Link to='/shop'>Shop</Link></p>
+
             <Menu>
 
 
-                    <a href='#solar-panel'>Solar Panel</a>
+                    <a href='#solar-panel'>Charging</a>
 
-                    <a href='#solar-roof'>Solar Roof</a>
+                    <a href='#solar-roof'>Vehicle Accessories</a>
+
+                    <a href='#solar-roof'>Apparel</a>
+
+                    <a href='#solar-roof'>Lifestyle</a>
                 
 
             </Menu>
