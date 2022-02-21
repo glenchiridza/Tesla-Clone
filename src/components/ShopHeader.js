@@ -32,7 +32,7 @@ function ShopHeader(){
 
             <RightMenu>
                 <SearchLinkIcon></SearchLinkIcon>
-                <a href="/cart" ><CartLinkIcon></CartLinkIcon></a>
+                <Link to="/cart" ><CartLinkIcon></CartLinkIcon></Link>
                 <Link to='/account'>Account</Link>
 
             </RightMenu>

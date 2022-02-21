@@ -1,13 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 
 function Cart() {
   return (
     <CartWrap>
-        <h1>Your Cart is Empty</h1>
-        <ButtonContinue>Continue Shopping</ButtonContinue>
-        <ButtonSignIn>Sign In</ButtonSignIn>
+        <Content>
+            <p>Hi glen chiridza</p>
+            <h1>Your Cart is Empty</h1>
+            <Link to='/shop'><ButtonContinue>Continue Shopping</ButtonContinue></Link>
+            <Link to='/account'><ButtonSignIn>Sign In</ButtonSignIn></Link>
+        </Content>
+        
     </CartWrap>
   )
 }
@@ -20,11 +25,22 @@ const CartWrap = styled.div`
     background:#ffffff;
     height:100vh;
     width:100vw;
-    justify-content:center;
-    align-items:center;
+    justify-content:start;
+    align-items:start;
     text-align:start;
 
+   
 `;
+const Content = styled.div`
+    width:26vw;
+    margin-left:10%;
+    margin-top:10%;
+
+    @media (max-width:480px){
+        margin:2%;
+    }
+`;
+
 const ButtonContinue = styled.div`
     padding: 10px;
     text-transform:uppercase;
