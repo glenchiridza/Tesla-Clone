@@ -46,6 +46,8 @@ function Home(){
             backgroundImage = "accessories.jpg" 
             leftButtonText="Shop Now"/>
 
+        
+
         </Container>
     );
 }

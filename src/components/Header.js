@@ -5,6 +5,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import { useState } from 'react';
 import { selectCars } from '../features/car/carDataSlice';
 import {useSelector} from 'react-redux';
+import { Link } from 'react-router-dom';
 
 function Header(){
 
@@ -13,14 +14,15 @@ function Header(){
 
     return (
 
+
         <Container>
-            <a>
+            <Link to='/'>
                 <img src='images/logo.svg' alt=''/>
-            </a>
+            </Link>
             <Menu>
 
                  {cars && cars.map((car,index)=>(
-                        <a key={index} href={`#${car}`}>{car}</a>
+                        <a key={index} href={`#${car.replace(" ","")}`}>{car}</a>
                         ))}
 
                     <a href='#solar-panel'>Solar Panel</a>
@@ -32,7 +34,7 @@ function Header(){
 
             <RightMenu>
                 <a href="#">Shop</a>
-                <a href="">Account</a>
+                <Link to='/account'>Account</Link>
 
                 <CustomMenu onClick={()=> setRightNavStatus(true)}>
 
