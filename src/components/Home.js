@@ -31,13 +31,13 @@ function Home(){
             leftButtonText="Custom Order"
             rightButtonText="Existing Inventory"/>
 
-        <Section itemId="solar_panel" title="Solar Panels"
+        <Section itemId="solar-panel" title="Solar Panels"
             backgroundImage = "solar-panel.jpg" 
             description="Lowest Cost Solar Panels in America "
             leftButtonText="Order Now"
             rightButtonText="Learn More"/>
 
-        <Section itemId="solar_roof" title="Solar Roof"
+        <Section itemId="solar-roof" title="Solar Roof"
             backgroundImage = "solar-roof.jpg" 
             description="Produce Clean Energy From Your Roof "
             leftButtonText="Order Now"

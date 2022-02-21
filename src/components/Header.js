@@ -33,7 +33,7 @@ function Header(){
             </Menu>
 
             <RightMenu>
-                <a href="#">Shop</a>
+                <Link to="/shop">Shop</Link>
                 <Link to='/account'>Account</Link>
 
                 <CustomMenu onClick={()=> setRightNavStatus(true)}>
