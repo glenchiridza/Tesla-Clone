@@ -1,8 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from '@material-ui/icons/Close';
+import { useState } from 'react';
+import { selectCars } from '../features/car/CarDataSlice';
+import {useSelector} from 'react-redux';
 
 function Header(){
+
+    const [rightNavStatus,setRightNavStatus] = useState(false);
+    const cars =useSelector(selectCars);
+
     return (
 
         <Container>
@@ -10,17 +18,12 @@ function Header(){
                 <img src='images/logo.svg' alt=''/>
             </a>
             <Menu>
-            
-                    <a href='#model3'>Model 3</a>
+                    {cars && cars.map((car,index)=> (
+
+                        <a key={index} href='#'>{car}</a>
                 
-            
-                    <a href='#modelS'>Model Y</a>
-                
-            
-                    <a href='#modelS'>Model S</a>
-                
-            
-                    <a href='#modelS'>Model X</a>
+                        )
+                    )}
 
                     <a href='#solar-panel'>Solar Panel</a>
 
@@ -34,13 +37,16 @@ function Header(){
                 <a href="#">Shop</a>
                 <a href="">Account</a>
 
-                <CustomMenu>
+                <CustomMenu onClick={()=> setRightNavStatus(true)}>
 
                 </CustomMenu>
 
             </RightMenu>
 
-            <RightSideNav>
+            <RightSideNav show={rightNavStatus}>
+                <CloseButtonWrapper onClick={()=>setRightNavStatus(false)}>
+                <CloseButton></CloseButton>
+                </CloseButtonWrapper>
                 <li><a hre="#">Existing Inventory</a></li>
                 <li><a hre="#">Used Inventory</a></li>
                 <li><a hre="#">Test-drive</a></li>
@@ -125,7 +131,18 @@ const RightSideNav = styled.div`
         border-bottom: 1px solid rgba(0,0,0,0.3);
         font-weight:100;
         font-family: 'Open Sans Condensed',sans-serif;
+        cursor:pointer;
     }
+    transform: ${props => props.show ? 'translateX(0)': 'translateX(100%)'};
+    transition: transform 0.4s ease-in-out;
     
 
+`
+
+const CloseButton = styled(CloseIcon)`
+    cursor:pointer;
+`
+const CloseButtonWrapper = styled.div`
+    display:flex;
+    justify-content:flex-end;
 `
