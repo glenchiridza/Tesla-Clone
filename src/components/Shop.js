@@ -1,5 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import {Fade} from 'react-reveal';
 
 function Shop() {
   return (
@@ -13,33 +14,45 @@ function Shop() {
 
         <BestSeller>
             <p>Best Seller</p>
-            <div>
-                <img src="images/models.avif" />
-                <h2>Model S Accessories</h2>
-            </div>
+
+            <Fade bottom>
+                <div>
+                    <img src="images/models.avif" />
+                    <h2>Model S Accessories</h2>
+                </div>
+            </Fade>
 
             <CenterModel>
-                <ImageLeft>
-                    <img src="images/model3.avif" />
-                    <h2>Model 3 Accessories</h2>
-                </ImageLeft>
-                <ImageRight>
-                    <img src="images/modelx.avif" />
-                    <h2>Model X Accessories</h2>
-                </ImageRight>
+                <Fade right>
+                    <ImageLeft>
+                        <img src="images/model3.avif" />
+                        <h2>Model 3 Accessories</h2>
+                    </ImageLeft>
+                </Fade>
+                <Fade left>
+                    <ImageRight>
+                        <img src="images/modelx.avif" />
+                        <h2>Model X Accessories</h2>
+                    </ImageRight>
+                </Fade>
                   
             </CenterModel>
             
 
             <BottomModel>
-                <ModelY>
-                    <img src="images/model_y.avif" />
-                    <h2>Model Y Accessories</h2>
-                </ModelY>
-                <LifeStyle>
-                    <img src="images/lifestyle_buckle.avif" />
-                    <h2>Lifestyle</h2>
-                </LifeStyle>
+
+                <Fade top>
+                    <ModelY>
+                        <img src="images/model_y.avif" />
+                        <h2>Model Y Accessories</h2>
+                    </ModelY>
+                </Fade>
+                <Fade bottom>
+                    <LifeStyle>
+                        <img src="images/lifestyle_buckle.avif" />
+                        <h2>Lifestyle</h2>
+                    </LifeStyle>
+                </Fade>
             </BottomModel>
 
         </BestSeller>
