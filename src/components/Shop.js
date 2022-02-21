@@ -21,18 +21,22 @@ function Shop() {
             <CenterModel>
                 <ImageLeft>
                     <img src="images/model3.avif" />
+                    <h2>Model 3 Accessories</h2>
                 </ImageLeft>
                 <ImageRight>
                     <img src="images/modelx.avif" />
+                    <h2>Model X Accessories</h2>
                 </ImageRight>
                   
             </CenterModel>
             
 
-            <div>
-                <img src="images/model_y.avif" />
-                <h2>Model Y Accessories</h2>
-            </div>
+            <BottomModel>
+                <ModelY>
+                    <img src="images/model_y.avif" />
+                    <h2>Model Y Accessories</h2>
+                </ModelY>
+            </BottomModel>
         </BestSeller>
 
         
@@ -107,12 +111,33 @@ const CenterModel = styled.div`
 
 `;
 
+
 const ImageLeft = styled.div`
+    h2{
+        position:relative;
+        top:-30vh;
+        left:3vw;
+        color:#fff;
+        font-weight:600;
+    }
+    img{
         width:50vw;
         object-fit:cover;
         padding:10px;
+    }
 `
 
 const ImageRight = styled(ImageLeft)`
 
+`
+const  BottomModel = styled(CenterModel)`
+    
+`
+const ModelY = styled.div`
+    h2{
+        position:relative;
+        top:-30vh;
+        right:21vw;
+        font-weight:600;
+    }
 `
