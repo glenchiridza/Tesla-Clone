@@ -1,5 +1,8 @@
 code => glen chiridza
 
+checkout live preview at :  https://glenchiridza-teslaclone.web.app/
+
+tell me how you feel at: glenchiridz@gmail.com
 ## TESLA CLONE 
 Simple react project resembling tesla front end interface. 
 Well clone it and have fun, with react
