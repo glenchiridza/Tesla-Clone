@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+
 
 function Cart() {
   return (
@@ -37,7 +39,7 @@ const ButtonContinue = styled.div`
         background:blue;
     }
 `;
-const ButtonSignIn = styled(SignInButton)`
+const ButtonSignIn = styled(ButtonContinue)`
     color:#000;
     background:#ffffff;
     border:2px solid #111;
