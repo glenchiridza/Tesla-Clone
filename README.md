@@ -1,4 +1,4 @@
-code = > glen chiridza
+code => glen chiridza
 
 ## TESLA CLONE 
 Simple react project resembling tesla front end interface. 
