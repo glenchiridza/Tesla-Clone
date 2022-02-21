@@ -18,19 +18,16 @@ function Header(){
                 <img src='images/logo.svg' alt=''/>
             </a>
             <Menu>
-                    {cars && cars.map((car,index)=> (
 
-                        <a key={index} href='#'>{car}</a>
-                
-                        )
-                    )}
+                 {cars && cars.map((car,index)=>(
+                        <a key={index} href={`#${car}`}>{car}</a>
+                        ))}
 
                     <a href='#solar-panel'>Solar Panel</a>
 
                     <a href='#solar-roof'>Solar Roof</a>
+                
 
-                
-                
             </Menu>
 
             <RightMenu>
@@ -47,6 +44,11 @@ function Header(){
                 <CloseButtonWrapper onClick={()=>setRightNavStatus(false)}>
                 <CloseButton></CloseButton>
                 </CloseButtonWrapper>
+                {cars && cars.map((car,index)=> (
+
+                    <li key={index} ><a href={`#${car}`}>{car}</a></li>
+
+                ))}
                 <li><a hre="#">Existing Inventory</a></li>
                 <li><a hre="#">Used Inventory</a></li>
                 <li><a hre="#">Test-drive</a></li>
@@ -91,11 +93,13 @@ const Menu = styled.div`
         font-weight:600;
         padding:0 10px;
         flex-wrap:no-wrap;
+        font-family: 'Times New Roman', sans-serif;
     }
     @media(max-width:772px){
         display:none;
     }
 `
+
 
 const RightMenu = styled.div`
     display:flex;
@@ -135,7 +139,7 @@ const RightSideNav = styled.div`
     }
     transform: ${props => props.show ? 'translateX(0)': 'translateX(100%)'};
     transition: transform 0.4s ease-in-out;
-    
+    overflow-y:scroll;
 
 `
 
