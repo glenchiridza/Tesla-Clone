@@ -4,7 +4,8 @@ code => glen chiridza
 Simple react project resembling tesla front end interface. 
 Well clone it and have fun, with react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## to install all dependencies
+npm install 
 
 ## Available Scripts
 
