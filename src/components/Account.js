@@ -64,6 +64,12 @@ const AuthFields = styled.div`
     margin:auto;
     justify-content:center;
     align-items:center;
+
+    @media (max-width:360px){
+        div{
+            width:100vw;
+        }
+    }
 `
 
 const SignInButton = styled.div`
