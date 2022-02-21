@@ -36,7 +36,12 @@ function Shop() {
                     <img src="images/model_y.avif" />
                     <h2>Model Y Accessories</h2>
                 </ModelY>
+                <LifeStyle>
+                    <img src="images/lifestyle_buckle.avif" />
+                    <h2>Lifestyle</h2>
+                </LifeStyle>
             </BottomModel>
+
         </BestSeller>
 
         
@@ -139,5 +144,10 @@ const ModelY = styled.div`
         top:-30vh;
         right:21vw;
         font-weight:600;
+    }
+`
+const LifeStyle = styled(ModelY)`
+    h2{
+        right:25vw;
     }
 `
