@@ -56,6 +56,14 @@ const AccountWrap = styled.div`
         color:#9a9b9d;
         
     }
+    @media (max-width:360px){
+        div{
+            width:100vw;
+        }
+        a{
+            font-size:12px;
+        }
+    }
     
 `
 
