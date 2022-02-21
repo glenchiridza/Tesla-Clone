@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container,Menu,RightMenu } from '../shared/HeaderConstants';
+import { Container,Menu,RightMenu } from '../shared/ShopHeaderConstants';
 
 function ShopHeader(){
 
