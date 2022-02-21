@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container,Menu,RightMenu } from '../shared/ShopHeaderConstants';
+import { Container,Menu,RightMenu,SearchLinkIcon,CartLinkIcon } from '../shared/ShopHeaderConstants';
 
 function ShopHeader(){
 
@@ -31,7 +31,8 @@ function ShopHeader(){
             </Menu>
 
             <RightMenu>
-                <a href="/shop" >Shop</a>
+                <SearchLinkIcon></SearchLinkIcon>
+                <a href="/shop" ><CartLinkIcon></CartLinkIcon></a>
                 <Link to='/account'>Account</Link>
 
             </RightMenu>

@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
-import MenuIcon from "@material-ui/icons/Menu";
-import CloseIcon from '@material-ui/icons/Close';
+import { ShoppingCartTwoTone } from '@material-ui/icons';
+import { SearchOutlined } from '@material-ui/icons';
 
 export const Container = styled.div`
     min-height:55px;
@@ -71,4 +71,12 @@ export const RightMenu = styled.div`
     flex-wrap:no-wrap;
     }
     padding:10px;
+`
+
+export const SearchLinkIcon = styled(SearchOutlined)`
+    margin-right:15px;
+`
+
+export const CartLinkIcon = styled(ShoppingCartTwoTone)`
+    margin-right:15px;
 `

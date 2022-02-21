@@ -4,7 +4,13 @@ import styled from 'styled-components'
 function Shop() {
   return (
     <HeadContainer>
-        <HeadBackImage></HeadBackImage>
+        <HeadBackImage>
+            <div>
+                <h1>Wall Connector</h1>
+                <p>The fastest way to charge at home</p>
+            </div>
+        </HeadBackImage>
+
     </HeadContainer>
   )
 }
@@ -22,6 +28,21 @@ const HeadBackImage = styled.div`
     background-image:url('/images/tesla-charge.avif');
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
+    *{
+        color:#ffffff;
+    }
+    div{
+        margin-bottom:10%;
+    }
+    h1{
+        font-size:18px;
+        text-transform:uppercase;
+    }
+    p{
+        font-size:22px;
+    }
+
+
 `
