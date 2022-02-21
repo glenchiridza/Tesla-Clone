@@ -67,9 +67,7 @@ export default Shop
 
 const HeadContainer = styled.div`
 @media (max-width:480px){
-    h2,img{
-        display:none;
-    }
+    
     div{
         width:100%;
         flex-direction:column;
@@ -139,7 +137,6 @@ const CenterModel = styled.div`
     width:100vw;
 
     
-    
 `;
 
 
@@ -155,6 +152,12 @@ const ImageLeft = styled.div`
         width:50vw;
         object-fit:cover;
         padding:10px;
+    }
+    
+    @media (max-width:360px){
+        h2,img{
+            display:none;
+        }
     }
 `
 
