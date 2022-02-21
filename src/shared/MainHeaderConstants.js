@@ -83,3 +83,13 @@ const CloseButtonWrapper = styled.div`
 display:flex;
 justify-content:flex-end;
 `
+
+export {
+    Container,
+    Menu,
+    RightMenu,
+    CustomMenu,
+    RightSideNav,
+    CloseButton,
+    CloseButtonWrapper
+}
