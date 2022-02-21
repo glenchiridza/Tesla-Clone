@@ -66,7 +66,17 @@ function Shop() {
 export default Shop
 
 const HeadContainer = styled.div`
+@media (max-width:480px){
+    h2,img{
+        display:none;
+    }
+    div{
+        width:100%;
+        flex-direction:column;
+        margin:0;
+    }
     
+}
 `
 const HeadBackImage = styled.div`
     width:100vw;
@@ -91,6 +101,8 @@ const HeadBackImage = styled.div`
     p{
         font-size:22px;
     }
+
+   
 
 `;
 
@@ -124,9 +136,10 @@ const CenterModel = styled.div`
     margin:1.5%;
     display:flex;
     flex-direction:row;
-    flex-wrap:wrap;
     width:100vw;
 
+    
+    
 `;
 
 
@@ -149,7 +162,10 @@ const ImageRight = styled(ImageLeft)`
 
 `
 const  BottomModel = styled(CenterModel)`
-    
+    @media (max-width:480px){
+        flex-direction:column;
+
+    }
 `
 const ModelY = styled.div`
     h2{

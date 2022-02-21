@@ -40,6 +40,8 @@ const Content = styled.div`
 
     @media (max-width:480px){
         margin:2%;
+        margin-top:15%;
+        width:100vw;
     }
 `;
 
@@ -49,6 +51,9 @@ const CartLink = styled.div`
     justify-content:space-between;
     a{
         margin-right:10px;
+    }
+    @media (max-width:480px){
+        flex-direction:column;
     }
 
 `;
@@ -66,6 +71,9 @@ const ButtonContinue = styled.div`
     &:hover{
         background:blue;
     }
+    @media (max-width:480px){
+        width:100vw;
+    }
 `;
 const ButtonSignIn = styled(ButtonContinue)`
     color:#000;
@@ -77,6 +85,10 @@ const ButtonSignIn = styled(ButtonContinue)`
         background:rgba(0,0,0,0.9);
         color:#ffffff;
         border:2px solid #fff;
+    }
+    @media (max-width:480px){
+        margin-top:2%;
+        width:100vw;
     }
 
 `;
