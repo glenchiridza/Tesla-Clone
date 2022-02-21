@@ -9,7 +9,23 @@ import Account from './components/Account';
 import Shop from './components/Shop';
 
 function App() {
-  return (
+  if(window.location.href.includes('shop')){
+    return (
+      <div className="App">
+        
+        <Routes>
+          <Route path='/' element={< Home />} exact={true}/>
+          <Route path='shop' element={< Shop />}/>
+          <Route path='account' element={< Account />}/>
+  
+        </Routes>  ,
+   
+       
+      </div>
+    );
+}
+  else {
+    return (
     <div className="App">
       
       <Routes>
@@ -17,11 +33,16 @@ function App() {
         <Route path='shop' element={< Shop />}/>
         <Route path='account' element={< Account />}/>
 
-      </Routes>  ,
-
+      </Routes>  ,    
+        
       <Header />
+
     </div>
   );
+    }
+    //end else
+
+
 }
 
 export default App;

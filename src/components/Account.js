@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 function Account(){
     return (
+        
         <AccountWrap>
         <AuthFields>
             <h1>Sign In</h1>

@@ -12,11 +12,12 @@ function Header(){
     const [rightNavStatus,setRightNavStatus] = useState(false);
     const cars =useSelector(selectCars);
 
+
     return (
 
 
         <Container>
-            <Link to='/'>
+            <Link to='/' >
                 <img src='images/logo.svg' alt=''/>
             </Link>
             <Menu>
@@ -33,7 +34,7 @@ function Header(){
             </Menu>
 
             <RightMenu>
-                <Link to="/shop">Shop</Link>
+                <a href="/shop" >Shop</a>
                 <Link to='/account'>Account</Link>
 
                 <CustomMenu onClick={()=> setRightNavStatus(true)}>
@@ -84,6 +85,7 @@ const Container = styled.div`
     left:0;
     right:0;
     z-index;1;
+   
 `
 
 const Menu = styled.div`
