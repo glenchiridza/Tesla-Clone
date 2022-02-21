@@ -1,4 +1,4 @@
-## NOTE THAT IT IS NOT YET OPTIMIZED FOR MOBILE, DESKTOP VIEW
+
 code => glen chiridza
 
 checkout live preview at :  https://glenchiridza-teslaclone.web.app/
