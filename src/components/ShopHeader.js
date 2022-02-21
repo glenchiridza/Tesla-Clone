@@ -19,20 +19,20 @@ function ShopHeader(){
             <Menu>
 
 
-                    <a href='#solar-panel'>Charging</a>
+                    <a href='#charging'>Charging</a>
 
-                    <a href='#solar-roof'>Vehicle Accessories</a>
+                    <a href='#accessories'>Vehicle Accessories</a>
 
-                    <a href='#solar-roof'>Apparel</a>
+                    <a href='#apparel'>Apparel</a>
 
-                    <a href='#solar-roof'>Lifestyle</a>
+                    <a href='#lifestyle'>Lifestyle</a>
                 
 
             </Menu>
 
             <RightMenu>
                 <SearchLinkIcon></SearchLinkIcon>
-                <a href="/shop" ><CartLinkIcon></CartLinkIcon></a>
+                <a href="/cart" ><CartLinkIcon></CartLinkIcon></a>
                 <Link to='/account'>Account</Link>
 
             </RightMenu>

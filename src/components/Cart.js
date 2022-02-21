@@ -2,13 +2,27 @@ import React from 'react'
 
 function Cart() {
   return (
-    <div>Cart</div>
+    <CartWrap>
+        <h1>Your Cart is Empty</h1>
+        <ButtonContinue>Continue Shopping</ButtonContinue>
+        <ButtonSignIn>Sign In</ButtonSignIn>
+    </CartWrap>
   )
 }
 
 export default Cart;
 
+const CartWrap = styled.div`
+    display:flex;
+    flex-direction:column;
+    background:#ffffff;
+    height:100vh;
+    width:100vw;
+    justify-content:center;
+    align-items:center;
+    text-align:start;
 
+`;
 const ButtonContinue = styled.div`
     padding: 10px;
     text-transform:uppercase;
