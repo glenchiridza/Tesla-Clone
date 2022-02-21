@@ -9,8 +9,10 @@ function Cart() {
         <Content>
             <p>Hi glen chiridza</p>
             <h1>Your Cart is Empty</h1>
-            <Link to='/shop'><ButtonContinue>Continue Shopping</ButtonContinue></Link>
-            <Link to='/account'><ButtonSignIn>Sign In</ButtonSignIn></Link>
+            <CartLink>
+                <Link to='/shop'><ButtonContinue>Continue Shopping</ButtonContinue></Link>
+                <Link to='/account'><ButtonSignIn>Sign In</ButtonSignIn></Link>
+            </CartLink>
         </Content>
         
     </CartWrap>
@@ -41,7 +43,17 @@ const Content = styled.div`
     }
 `;
 
+const CartLink = styled.div`
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    a{
+        margin-right:10px;
+    }
+
+`;
 const ButtonContinue = styled.div`
+    width:20vw;
     padding: 10px;
     text-transform:uppercase;
     font-size:13px;
